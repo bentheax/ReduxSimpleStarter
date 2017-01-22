@@ -3,6 +3,7 @@ services:
   app:
     environment:
       NODE_ENV: development
+      YOUTUBE_API_KEY:
     build: .
     volumes:
       - .:/app
