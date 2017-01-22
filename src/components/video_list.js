@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import VideoListItem from './video_list_item';
+import './video_list.css';
 
 const VideoList = (props) => {
   const videoItems = props.videos.map((video) => {
@@ -12,7 +13,7 @@ const VideoList = (props) => {
   });
 
   return (
-    <Col sm={4}>
+    <Col sm={4} className="VideoList">
       <ul className="list-group">
         {videoItems}
       </ul>
